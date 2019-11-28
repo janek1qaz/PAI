@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biblioteka miejska</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<?php
+$host = "localhost";
+$user = "root";
+$password = "";
+$connection = @mysql_connect($host, $user, $password)
+or die('Brak połączenia z serwerem MySQL.<br />Błąd:'.mysql_error());
+mysql_select_db();
+mysqli_query($connection,);
+
+
+
+
+mysql_close($connection);
+?>
+<body>
+        <header>
+            <h2>Miejska Biblioteka Publiczna
+            w Książkowicach</h2>
+        </header>
+  
+        <div id="left">
+          <p><h3>W naszych zbiorach znajdziesz dzieła następujących
+                autorów:</h3></p>
+        </div>
+  
+        <div id="middle">
+        <h3 id="mid">Dodaj nowego czytelnika</h3>
+        <form action="" method="POST">
+        imię<input type="text" ></br>
+        nazwisko<input type="text"><br/>
+         rok urodzenia<input type="number"><br/>
+         <input type="submit" value="dodaj" >
+        </form>
+        </div>
+  
+        <div id="right">
+          <img id="img" src="biblioteka.png" alt="">
+          <h4>ul. Czytelnicza 25<br/> 12-120 Książkowice<br/> tel.: 123123123<br/>
+            e-mail: <a href="mailto:biuro@biblioteka.pl ?subject=tytuł listu&amp;;body= treść listu">biuro@biblioteka.pl</a></h4>
+        </div>
+  
+        <footer><p>projekt strony:2131238712</p></footer>
+
+
+        <?php
+$imie = $_POST['name'];
+$last_name = $_POST['last_name'];
+$rok_urodzenia = $_POST['rok_urodzenia'];
+
+
+?>
+</body>
+</html>
