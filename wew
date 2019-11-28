@@ -1,0 +1,46 @@
+ header {
+    background-color:#18FFA4;
+    text-align:center;
+    height: 50px;
+    
+  }
+
+  #left {
+    float:left;
+    background-color:#AEFFCF;
+    height: 550px;
+    width:30%;
+  }
+
+  #middle {
+    float:left;
+    background-color:#DDFFCD;
+    height: 550px;
+    width:40%;
+  }
+
+  #right {
+    float:left;
+    background-color:#AEFFCF;
+    height: 550px;
+    width:30%;
+  }
+
+  footer {
+    clear:both;
+    background-color:#18FFA4;
+    text-align:center;
+    height: 50px;
+  }
+  #img {
+    margin:100px ;
+  }
+  form{
+      margin-left: 150px;
+  }
+  #middle>h3{
+      text-align: center;
+  }
+  h4{
+      margin-left: 100px;
+  }
